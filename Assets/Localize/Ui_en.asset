@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 11461771264
-    m_Localized: new game
+    m_Localized: start game
     m_Metadata:
       m_Items: []
   - m_Id: 779635965952
@@ -32,6 +32,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4827244183552
     m_Localized: settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17426996314112
+    m_Localized: 'Player:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18893555679232
+    m_Localized: 'Location:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 158965437349888
+    m_Localized: SaveSettings
     m_Metadata:
       m_Items: []
   references:
