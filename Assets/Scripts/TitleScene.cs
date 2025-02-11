@@ -25,6 +25,7 @@ public class TitleScene : MonoBehaviour
     }
     private void Start()
     {
+
         gameslotPannel.SetActive(false);
         settings = SaveManager.instance.LoadGameSettings();
         volume = settings.volume;
