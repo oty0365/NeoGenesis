@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MonsterSet
   m_EditorClassIdentifier: 
   monsterCode: 
-  monsterInfo: {fileID: 0}
+  monsterInfo: {fileID: 11400000, guid: 14e022abd4d63024e9e2d59140575826, type: 2}

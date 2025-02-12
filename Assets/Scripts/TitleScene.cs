@@ -33,6 +33,7 @@ public class TitleScene : MonoBehaviour
         sound.value = volume;
         ChangeLanguage(lang);
         menuPannel.SetActive(false);
+        GameSlotUI.uiUpdate();
 
     }
     public void OnLangChangeClicked(string type)
@@ -60,7 +61,7 @@ public class TitleScene : MonoBehaviour
     }
     public void StartGameClicked()
     {
-        gameslotPannel.SetActive(false);
+        gameslotPannel.SetActive(true);
     }
     public void SettingsClicked()
     {

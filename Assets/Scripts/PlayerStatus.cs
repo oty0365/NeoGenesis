@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStatusData
 {
     public string playerName;
+    public int playerType;
     public Dictionary<string, MonsterData> entry;
     public Dictionary<string, MonsterData> monsters;
     public Dictionary<string, ItemData> items;

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23ed733645a18c3498c5edc981c399d4, type: 3}
   m_Name: MonsterSets
   m_EditorClassIdentifier: 
-  MonsterSet: []
+  monsterSets: []
