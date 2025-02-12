@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: e6cfa00c6459a6242baa7c57babd3ff0
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 0e54788346edca1428c0b8cd95327789
+    m_Address: Assets/Sounds/PeacefullSong.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7b7eb86a39de5804d8bf45d4bc88684c, type: 2}
   m_SchemaSet:
