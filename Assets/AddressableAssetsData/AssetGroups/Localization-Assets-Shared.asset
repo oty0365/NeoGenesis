@@ -15,8 +15,18 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: 9984b38049d3e2c44b1791081fe45739
   m_SerializeEntries:
+  - m_GUID: 611148d813ae8654683dbb66a2abaf1d
+    m_Address: Assets/CutScene Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a2d688d38a654104fbe782a96d949070
     m_Address: Assets/Ui Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5459f51a2fbbab4a9515ac2b0611dfc
+    m_Address: Assets/CharacterNames Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

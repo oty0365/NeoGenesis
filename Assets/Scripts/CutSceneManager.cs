@@ -13,8 +13,8 @@ public class CutSceneManager : MonoBehaviour
 
     public void PutText()
     {
-        cutSceneText.text = dialouges.dialougeTexts[currentIndex]?.text.ToString();
-        nameText.text = dialouges.dialougeTexts[currentIndex]?.talkerName.ToString();
+        cutSceneText.text = dialouges.dialougeTexts[currentIndex]?.text.GetLocalizedString();
+        nameText.text = dialouges.dialougeTexts[currentIndex]?.talkerName.GetLocalizedString();
     }
     public void ChangeText()
     {
