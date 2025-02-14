@@ -4,6 +4,7 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
 {
 
     public CutSceneData cutScenes;
+    public AudioClip[] audioClips;
     public int gameEventIndex;
     public int cutSceneIndex;
     public bool isGameEvent;

@@ -24,7 +24,7 @@ public enum MonsterType
     Dark,
     Light,
     Poisoin,
-    Electic,
+    Electric,
     Iron,
     Fist,
     Stone,

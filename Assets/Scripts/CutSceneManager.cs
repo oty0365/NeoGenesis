@@ -26,7 +26,17 @@ public class CutSceneManager : MonoBehaviour
     {
         currentIndex++;
 
-    } 
+    }
+    public void PlayBgm(string code)
+    {
+        AudioManager.instance.SetBgm(code);
+        AudioManager.instance.PlayBgm(false);
+    }
+    public void FadeBgm(float time)
+    {
+        AudioManager.instance.ClipFade(time);
+    }
+
     public void EndCutScene()
     {
         MapManager.instance.mapData.cutSceneData[MapManager.instance.mapData.curLocation] = cutSceneLevel;
