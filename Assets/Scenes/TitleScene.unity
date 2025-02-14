@@ -2076,6 +2076,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &622785246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622785248}
+  - component: {fileID: 622785247}
+  m_Layer: 0
+  m_Name: SettingsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &622785247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622785246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b267d22ab77315543aad23f18fc06e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 0
+  lang: 
+  settings:
+    volume: 100
+    lang: ko
+--- !u!4 &622785248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622785246}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1140.2817, y: 448.66644, z: -2.4670675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &650021370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,18 +2162,21 @@ MonoBehaviour:
       mapData:
         curPosition: {x: 0, y: 0}
         curLocation: 
+        curMapCode: 
     - playerStatusData:
         playerName: 
         playerType: 0
       mapData:
         curPosition: {x: 0, y: 0}
         curLocation: 
+        curMapCode: 
     - playerStatusData:
         playerName: 
         playerType: 0
       mapData:
         curPosition: {x: 0, y: 0}
         curLocation: 
+        curMapCode: 
   currentSlot:
     playerStatusData:
       playerName: 
@@ -2132,6 +2184,7 @@ MonoBehaviour:
     mapData:
       curPosition: {x: 0, y: 0}
       curLocation: 
+      curMapCode: 
 --- !u!4 &650021372
 Transform:
   m_ObjectHideFlags: 0
@@ -5015,9 +5068,6 @@ MonoBehaviour:
   lang: 
   gameslotPannel: {fileID: 1968864188}
   menuPannel: {fileID: 659683910}
-  settings:
-    volume: 100
-    lang: ko
 --- !u!1 &1701754918
 GameObject:
   m_ObjectHideFlags: 0
@@ -6552,3 +6602,4 @@ SceneRoots:
   - {fileID: 1543118321}
   - {fileID: 1331418992}
   - {fileID: 650021372}
+  - {fileID: 622785248}

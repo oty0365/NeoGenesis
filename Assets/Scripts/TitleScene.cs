@@ -18,7 +18,6 @@ public class TitleScene : MonoBehaviour
     public string lang;
     public GameObject gameslotPannel;
     public GameObject menuPannel;
-    public SettingsData settings;
     void Awake()
     {
         instance = this;
@@ -27,9 +26,9 @@ public class TitleScene : MonoBehaviour
     {
 
         gameslotPannel.SetActive(false);
-        settings = SaveManager.instance.LoadGameSettings();
-        volume = settings.volume;
-        lang = settings.lang;
+        SettingsManager.instance.GetSettings();
+        volume = SettingsManager.instance.volume;
+        lang = SettingsManager.instance.lang;
         sound.value = volume;
         ChangeLanguage(lang);
         menuPannel.SetActive(false);
@@ -73,8 +72,6 @@ public class TitleScene : MonoBehaviour
     }
     public void OnSaveClicked()
     {
-        settings.lang = lang;
-        settings.volume = sound.value;
-        SaveManager.instance.SaveGameSettings(settings);
+        SettingsManager.instance.SaveAllSettings(lang, sound.value);
     }
 }

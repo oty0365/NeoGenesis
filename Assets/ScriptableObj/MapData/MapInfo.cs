@@ -6,5 +6,6 @@ public class MapInfo : ScriptableObject
 {
     public LocalizedString mapName;
     public LocalizedString mapDesc;
+    public AudioClip mapBgm;
     public GameObject map;
 }

@@ -40,16 +40,6 @@ public class SaveManager : MonoBehaviour
             gameSlot.slot[i] = LoadPlayerData(i);
         }
     }
-    void Start()
-    {
-
-    }
-
-    
-    void Update()
-    {
-        
-    }
     public void SaveGameSettings(SettingsData newData)
     {
         string json = JsonUtility.ToJson(newData, true);

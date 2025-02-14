@@ -13,6 +13,10 @@ public class CutSceneManager : MonoBehaviour
     [Header("«ÿ¥Á ƒ∆æ¿ ∞‘¿”ø¿∫Í¡ß∆Æ")]
     public GameObject cutScene;
 
+    public void Start()
+    {
+        MapManager.instance.currentMap.map.SetActive(false);
+    }
     public void PutText()
     {
         cutSceneText.text = dialouges.dialougeTexts[currentIndex]?.text.GetLocalizedString();
@@ -25,7 +29,8 @@ public class CutSceneManager : MonoBehaviour
     } 
     public void EndCutScene()
     {
-        MapManager.instance.mapData.cutSceneData[MapManager.instance.mapCode] = cutSceneLevel;
+        MapManager.instance.mapData.cutSceneData[MapManager.instance.mapData.curLocation] = cutSceneLevel;
+        MapManager.instance.currentMap.map.SetActive(true);
         Destroy(cutScene);
     }
 }
