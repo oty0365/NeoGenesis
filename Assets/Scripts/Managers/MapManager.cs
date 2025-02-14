@@ -1,7 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static System.Net.WebRequestMethods;
 
+public interface IMapCutScene
+{
+    
+    public void CheckEvent();
+}
 [System.Serializable]
 public class MapData
 {
@@ -16,7 +20,7 @@ public class MapManager : MonoBehaviour
     public string mapCode;
     public MapData mapData;
     public MapSets mapSets;
-
+    public Dictionary<string,MapInfo> mapDict = new Dictionary<string,MapInfo>();
     private void Awake()
     {
         instance = this;
@@ -24,6 +28,10 @@ public class MapManager : MonoBehaviour
     void Start()
     {
         mapData = SaveManager.instance.currentSlot.mapData;
+        foreach (var i in mapSets.mapSets)
+        {
+            mapDict.Add(i.mapCode, i.mapInfo);
+        }
     }
 
     void Update()

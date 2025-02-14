@@ -10,6 +10,8 @@ public class CutSceneManager : MonoBehaviour
     public int currentIndex;
     public TextMeshProUGUI cutSceneText;
     public TextMeshProUGUI nameText;
+    [Header("해당 컷씬 게임오브젝트")]
+    public GameObject cutScene;
 
     public void PutText()
     {
@@ -24,5 +26,6 @@ public class CutSceneManager : MonoBehaviour
     public void EndCutScene()
     {
         MapManager.instance.mapData.cutSceneData[MapManager.instance.mapCode] = cutSceneLevel;
+        Destroy(cutScene);
     }
 }

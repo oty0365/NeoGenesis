@@ -883,6 +883,7 @@ MonoBehaviour:
   currentIndex: 0
   cutSceneText: {fileID: 1011680643}
   nameText: {fileID: 1980126849}
+  cutScene: {fileID: 1782993475}
 --- !u!114 &1267750608
 MonoBehaviour:
   m_ObjectHideFlags: 0
