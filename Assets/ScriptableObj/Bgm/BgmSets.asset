@@ -15,3 +15,4 @@ MonoBehaviour:
   bgmSets:
   - {fileID: 11400000, guid: c4e585c09e09e7f4ea0aa83c33240cd7, type: 2}
   - {fileID: 11400000, guid: 6e047afc5f870eb4db0a754fdb818dcc, type: 2}
+  - {fileID: 11400000, guid: b7c514d420f109d40838cd49c4a9ce7d, type: 2}

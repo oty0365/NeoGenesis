@@ -21,7 +21,7 @@ public class MapData
     public Dictionary<string, int>cutSceneData = new Dictionary<string, int>();
     public Dictionary<string, int> mapEventData = new Dictionary<string, int>();
 }
-public class MapManager : MonoBehaviour
+public class MapManager : MonoBehaviour,IUpLoader
 {
     public static MapManager instance;
     public string mapCode;
@@ -48,6 +48,11 @@ public class MapManager : MonoBehaviour
         }
         Instantiate(mapDict[mapCode].map);
 
+    }
+    public void UpLoadAndSaveData()
+    {
+        SaveManager.instance.currentSlot.mapData = mapData;
+        SaveManager.instance.gameSlot.slot[SaveManager.instance.currentIndex] = SaveManager.instance.currentSlot;
     }
 
     void Update()

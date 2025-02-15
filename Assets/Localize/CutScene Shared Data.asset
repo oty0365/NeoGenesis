@@ -36,7 +36,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 16531130728448
-    m_Key: 
+    m_Key: SelectCharacter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712201038774272
+    m_Key: ConfrimSelection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712444966912000
+    m_Key: yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712464067772416
+    m_Key: no
     m_Metadata:
       m_Items: []
   m_Metadata:

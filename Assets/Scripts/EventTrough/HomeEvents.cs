@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
 {
-
+    public static HomeEvents instance;
     public CutSceneData cutScenes;
     public AudioClip[] audioClips;
     public int gameEventIndex;
@@ -39,6 +39,7 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
         }
         if (!isCutScene)
         {
+            cutSceneIndex = MapManager.instance.mapData.cutSceneData[MapManager.instance.mapCode];
             CheckCutSceneEvent();
         }
     }
@@ -56,6 +57,10 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
             case 1:
                 TriggerCutSceneEvent(1);
                 break;
+            case 2:
+                TriggerCutSceneEvent(2);
+                break;
+
         }
     }
     public void TriggerCutSceneEvent(int index)

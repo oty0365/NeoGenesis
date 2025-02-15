@@ -15,14 +15,18 @@ public class PlayerDataSets
 {
     public PlayerData[] slot = new PlayerData[3];
 }
+public interface IUpLoader
+{
+    public void UpLoadAndSaveData();
+}
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;
     public PlayerDataSets gameSlot;
     public PlayerData currentSlot;
+    public int currentIndex;
     private string settings;
     private string playerSaves;
-    private string storyLine;
     private void Awake()
     {
         instance = this;
@@ -33,7 +37,6 @@ public class SaveManager : MonoBehaviour
         }
         settings = Application.persistentDataPath + "/Settings.json";
         playerSaves = Application.persistentDataPath + "/PlayerSaves.json";
-        storyLine = Application.persistentDataPath + "/StoryLine.json";
         LoadGameSettings();
         for (var i = 0; i < gameSlot.slot.Length; i++)
         {
@@ -70,6 +73,7 @@ public class SaveManager : MonoBehaviour
     }
     public PlayerData LoadPlayerData(int index)
     {
+        currentIndex = index;
         if (File.Exists(playerSaves))
         {
             string json = File.ReadAllText(playerSaves);
@@ -86,6 +90,10 @@ public class SaveManager : MonoBehaviour
             PlayerData data = JsonUtility.FromJson<PlayerDataSets>(json).slot[index];
             return data;
         }
+    }
+    public void UpLoadPlayerDataInGameSlots()
+    {
+        gameSlot.slot[currentIndex] = currentSlot;
     }
     public PlayerData DeletePlayerData(int index)
     {

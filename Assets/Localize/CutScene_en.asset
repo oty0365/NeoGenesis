@@ -42,6 +42,23 @@ MonoBehaviour:
       doesn''t have any Choices'
     m_Metadata:
       m_Items: []
+  - m_Id: 16531130728448
+    m_Localized: "\rThe old television turns off and I'm indebted to the screen.\r\nWhat
+      am I going to look like?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712201038774272
+    m_Localized: Are you sure you want this character?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712444966912000
+    m_Localized: yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 712464067772416
+    m_Localized: no
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

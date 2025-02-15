@@ -40,6 +40,7 @@ public class CutSceneManager : MonoBehaviour
     public void EndCutScene()
     {
         MapManager.instance.mapData.cutSceneData[MapManager.instance.mapData.curLocation] = cutSceneLevel;
+        MapManager.instance.UpLoadAndSaveData();
         MapManager.instance.currentMap.map.SetActive(true);
         Destroy(cutScene);
     }
