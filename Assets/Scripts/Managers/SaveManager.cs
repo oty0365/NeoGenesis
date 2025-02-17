@@ -1,55 +1,71 @@
+using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
-using NUnit.Framework.Constraints;
+using UnityEditor.U2D.Aseprite;
 using UnityEngine;
+
+public interface IUpLoader
+{
+    public void UpLoadAndSaveData();
+}
 [System.Serializable]
 public class PlayerData
 {
     public PlayerStatusData playerStatusData;
     public CharacterInteractionData characterInteractionData;
     public MapData mapData;
-
 }
+
+
 [System.Serializable]
 public class PlayerDataSets
 {
     public PlayerData[] slot = new PlayerData[3];
 }
-public interface IUpLoader
-{
-    public void UpLoadAndSaveData();
-}
+
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;
-    public PlayerDataSets gameSlot;
+    public PlayerDataSets gameSlot = new PlayerDataSets();
     public PlayerData currentSlot;
     public int currentIndex;
     private string settings;
     private string playerSaves;
+
     private void Awake()
     {
         instance = this;
         DontDestroyOnLoad(gameObject);
-        if(FindObjectsByType<SaveManager>(0).Length > 1)
+        if (FindObjectsByType<SaveManager>(0).Length > 1)
         {
             Destroy(gameObject);
         }
         settings = Application.persistentDataPath + "/Settings.json";
         playerSaves = Application.persistentDataPath + "/PlayerSaves.json";
         LoadGameSettings();
+
         for (var i = 0; i < gameSlot.slot.Length; i++)
         {
             gameSlot.slot[i] = LoadPlayerData(i);
         }
     }
+
     public void SaveGameSettings(SettingsData newData)
     {
         string json = JsonUtility.ToJson(newData, true);
         File.WriteAllText(settings, json);
     }
+
     public void SavePlayerDataSets(PlayerDataSets playerDataSets)
     {
+        foreach (var slot in playerDataSets.slot)
+        {
+            if (slot != null)
+            {
+                slot.characterInteractionData.serializedData = slot.characterInteractionData.ConvertToSerializableList(slot.characterInteractionData.InteractionData);
+                slot.mapData.serializedCutSceneData = slot.mapData.ConvertToSerializableList(slot.mapData.CutSceneData);
+            }
+        }
+
         string json = JsonUtility.ToJson(playerDataSets, true);
         File.WriteAllText(playerSaves, json);
     }
@@ -59,50 +75,54 @@ public class SaveManager : MonoBehaviour
         if (File.Exists(settings))
         {
             string json = File.ReadAllText(settings);
-            SettingsData data = JsonUtility.FromJson<SettingsData>(json);
-            Debug.Log("게임 데이터 로드 성공!");
-            return data;
+            return JsonUtility.FromJson<SettingsData>(json);
         }
         else
         {
-            Debug.LogWarning("저장된 파일 없음! 새로운 파일 생성!");
             SettingsData newData = new SettingsData();
             SaveGameSettings(newData);
             return newData;
         }
     }
+
     public PlayerData LoadPlayerData(int index)
     {
         currentIndex = index;
         if (File.Exists(playerSaves))
         {
             string json = File.ReadAllText(playerSaves);
-            PlayerData data = JsonUtility.FromJson<PlayerDataSets>(json).slot[index];
-            Debug.Log("게임 데이터 로드 성공!");
-            return data;
+            PlayerDataSets dataSets = JsonUtility.FromJson<PlayerDataSets>(json);
+
+            if (dataSets != null && dataSets.slot.Length > index)
+            {
+                currentSlot = dataSets.slot[index];
+                currentSlot.characterInteractionData.InteractionData = currentSlot.characterInteractionData.ConvertToDictionary();
+                currentSlot.mapData.CutSceneData = currentSlot.mapData.ConvertToDictionary(currentSlot.mapData.serializedCutSceneData);
+                return currentSlot;
+            }
         }
-        else
-        {
-            Debug.LogWarning("저장된 파일 없음! 새로운 파일 생성!");
-            PlayerDataSets newData = new PlayerDataSets();
-            SavePlayerDataSets(newData);
-            string json = File.ReadAllText(playerSaves);
-            PlayerData data = JsonUtility.FromJson<PlayerDataSets>(json).slot[index];
-            return data;
-        }
+
+        PlayerDataSets newData = new PlayerDataSets();
+        SavePlayerDataSets(newData);
+        return newData.slot[index];
     }
+
     public void UpLoadPlayerDataInGameSlots()
     {
         gameSlot.slot[currentIndex] = currentSlot;
     }
+
     public PlayerData DeletePlayerData(int index)
     {
-        string json = File.ReadAllText(playerSaves);
-        PlayerData data = JsonUtility.FromJson<PlayerDataSets>(json).slot[index];
-        data = new PlayerData();
-        gameSlot.slot[index] = data;
-        SavePlayerDataSets(gameSlot);
-        Debug.Log("게임 데이터 로드 성공!");
-        return data;
+        if (File.Exists(playerSaves))
+        {
+            string json = File.ReadAllText(playerSaves);
+            PlayerDataSets dataSets = JsonUtility.FromJson<PlayerDataSets>(json);
+
+            dataSets.slot[index] = new PlayerData();
+            SavePlayerDataSets(dataSets);
+        }
+
+        return new PlayerData();
     }
 }

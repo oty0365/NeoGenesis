@@ -27,6 +27,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ko-KR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6fe7e610fbe6e2a438c5c92915a5fea1
+    m_Address: MapName_ko-KR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko-KR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c6c9949ec3c6aa34bb8b0f9ca29f19a4
     m_Address: CharacterNames_ko-KR
     m_ReadOnly: 1

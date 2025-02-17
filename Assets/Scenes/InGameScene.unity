@@ -413,7 +413,7 @@ MonoBehaviour:
     curPosition: {x: 0, y: 0}
     curLocation: 
     curMapCode: 
-  mapSets: {fileID: 0}
+  mapSets: {fileID: 11400000, guid: 68210cb542f942d4698409a72e762aa3, type: 2}
   currentMap: {fileID: 0}
 --- !u!4 &876322953
 Transform:

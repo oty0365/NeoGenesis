@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSlotUI : MonoBehaviour
 {
@@ -36,5 +37,10 @@ public class GameSlotUI : MonoBehaviour
     public void UiUpdate()
     {
         Debug.Log("UpdatedUi");
+    }
+    public void OnClick(int index)
+    {
+        SaveManager.instance.LoadPlayerData(index);
+        SceneManager.LoadScene("InGameScene");
     }
 }

@@ -15,6 +15,7 @@ public class CutSceneManager : MonoBehaviour
 
     public void Start()
     {
+        Debug.Log(MapManager.instance.currentMap.map);
         MapManager.instance.currentMap.map.SetActive(false);
     }
     public void PutText()
@@ -39,7 +40,8 @@ public class CutSceneManager : MonoBehaviour
 
     public void EndCutScene()
     {
-        MapManager.instance.mapData.cutSceneData[MapManager.instance.mapData.curLocation] = cutSceneLevel;
+        SaveManager.instance.LoadPlayerData(SaveManager.instance.currentIndex);
+        MapManager.instance.mapData.CutSceneData[MapManager.instance.mapData.curLocation] = cutSceneLevel;
         MapManager.instance.UpLoadAndSaveData();
         MapManager.instance.currentMap.map.SetActive(true);
         Destroy(cutScene);

@@ -1431,6 +1431,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 767d106bad22f7a4a937b0bd60c642da, type: 2}
     - {fileID: 11400000, guid: 00c99a40698ece1418ead35d93793583, type: 2}
     - {fileID: 11400000, guid: 98a0a3649cd9c694cb1edf0e602fa3b9, type: 2}
+    - {fileID: 11400000, guid: e53a4657de253184bb175b4e9ad36cbf, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -1485,6 +1486,20 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 4
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4003964745274236505}
+          m_TargetAssemblyTypeName: CutSceneManager, Assembly-CSharp
+          m_MethodName: EndCutScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2

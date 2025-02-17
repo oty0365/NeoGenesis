@@ -11,23 +11,23 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
     public bool isCutScene;
     void Start()
     {
-        if (MapManager.instance.mapData.cutSceneData.ContainsKey(MapManager.instance.mapCode))
+        if (MapManager.instance.mapData.CutSceneData.ContainsKey(MapManager.instance.mapCode))
         {
-            cutSceneIndex = MapManager.instance.mapData.cutSceneData[MapManager.instance.mapCode];
+            cutSceneIndex = MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode];
         }
         else
         {
             cutSceneIndex = 0;
-            MapManager.instance.mapData.cutSceneData[MapManager.instance.mapCode] = cutSceneIndex;
+            MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode] = cutSceneIndex;
         }
-        if (MapManager.instance.mapData.mapEventData.ContainsKey(MapManager.instance.mapCode)) 
+        if (MapManager.instance.mapData.MapEventData.ContainsKey(MapManager.instance.mapCode)) 
         {
-            gameEventIndex = MapManager.instance.mapData.mapEventData[MapManager.instance.mapCode];
+            gameEventIndex = MapManager.instance.mapData.MapEventData[MapManager.instance.mapCode];
         }
         else
         {
             gameEventIndex = 0;
-            MapManager.instance.mapData.mapEventData[MapManager.instance.mapCode] = gameEventIndex;
+            MapManager.instance.mapData.MapEventData[MapManager.instance.mapCode] = gameEventIndex;
         }
     }
 
@@ -39,7 +39,7 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
         }
         if (!isCutScene)
         {
-            cutSceneIndex = MapManager.instance.mapData.cutSceneData[MapManager.instance.mapCode];
+            cutSceneIndex = MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode];
             CheckCutSceneEvent();
         }
     }
