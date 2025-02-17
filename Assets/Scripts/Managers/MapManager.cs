@@ -44,7 +44,12 @@ public class MapManager : MonoBehaviour,IUpLoader
         if (mapData.curLocation == "")
         {
             mapCode=mapData.curMapCode = "Home";
+            UpLoadAndSaveData();
             mapName = mapDict[mapCode].mapName.GetLocalizedString();
+        }
+        else
+        {
+            mapCode = mapData.curMapCode;
         }
         Instantiate(mapDict[mapCode].map);
 
