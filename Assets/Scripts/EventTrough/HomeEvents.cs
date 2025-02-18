@@ -33,13 +33,13 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
 
     void Update()
     {
+        cutSceneIndex = MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode];
         if (!isGameEvent)
         {
             CheckGameEvent();
         }
         if (!isCutScene)
         {
-            cutSceneIndex = MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode];
             CheckCutSceneEvent();
         }
     }
