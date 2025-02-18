@@ -113,7 +113,9 @@ public class MapManager : MonoBehaviour,IUpLoader
             mapCode = mapData.curMapCode;
         }
         currentMap = mapDict[mapCode];
+        Debug.Log(currentMap);
         SaveManager.instance.currentSlot.mapData.curLocation = mapDict[mapCode].mapName.GetLocalizedString();
+        HeadCameraManager.instance.ChangeLens(currentMap.camSize);
         UpLoadAndSaveData();
         mapObj = Instantiate(currentMap.map);
 
@@ -124,7 +126,15 @@ public class MapManager : MonoBehaviour,IUpLoader
         SaveManager.instance.gameSlot.slot[SaveManager.instance.currentIndex] = SaveManager.instance.currentSlot;
         SaveManager.instance.SavePlayerDataSets(SaveManager.instance.gameSlot);
     }
-    public void LoadMap()
+    public void LoadMap(string mapCode)
+    {
+        mapData = SaveManager.instance.currentSlot.mapData;
+        currentMap = mapDict[mapCode];
+        SaveManager.instance.currentSlot.mapData.curLocation = mapDict[mapCode].mapName.GetLocalizedString();
+        UpLoadAndSaveData();
+        HeadCameraManager.instance.ChangeLens(currentMap.camSize);
+        mapObj = Instantiate(currentMap.map);
+    }
 
     void Update()
     {

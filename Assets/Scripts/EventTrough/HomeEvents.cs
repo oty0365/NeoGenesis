@@ -27,6 +27,13 @@ public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
             gameEventIndex = 0;
             MapManager.instance.mapData.MapEventData[MapManager.instance.mapCode] = gameEventIndex;
         }
+        switch (cutSceneIndex)
+        {
+            case 3:
+                AudioManager.instance.SetBgm("Home");
+                AudioManager.instance.PlayBgm(true);
+                break;
+        }
     }
 
     void Update()
@@ -58,7 +65,7 @@ public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
             case 2:
                 TriggerCutSceneEvent(2);
                 break;
-            case 4:
+            case 3:
                 break;
 
         }
