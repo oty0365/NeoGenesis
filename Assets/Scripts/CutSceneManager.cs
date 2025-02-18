@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -16,7 +17,6 @@ public class CutSceneManager : MonoBehaviour
     public void Start()
     {
         Debug.Log(MapManager.instance.currentMap.map);
-        //MapManager.instance.currentMap.map.SetActive(false);
     }
     public void PutText()
     {
@@ -42,7 +42,14 @@ public class CutSceneManager : MonoBehaviour
     {
         MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode] = cutSceneLevel;
         MapManager.instance.UpLoadAndSaveData();
-        MapManager.instance.currentMap.map.SetActive(true);
+        InGameEvents.isCutScene = false;
+        StartCoroutine(EndCutSceneFlow());
+        
+    }
+    private IEnumerator EndCutSceneFlow()
+    {
+        AudioManager.instance.SetOriginVolume();
+        yield return new WaitForSeconds(1f);
         Destroy(cutScene);
     }
 }

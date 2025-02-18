@@ -1,8 +1,12 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSelection : MonoBehaviour
 {
     public int currentType;
+    public string currentName;
+    public TMP_InputField inputField;
     public GameObject confrimPannel;
     public CutSceneManager cutSceneManager;
     public AudioClip bgm;
@@ -35,6 +39,30 @@ public class CharacterSelection : MonoBehaviour
             cutSceneManager.EndCutScene();
         }
 
+    }
+    public void SelectName()
+    {
+        if(inputField.text != "")
+        {
+            currentName = inputField.text;
+            confrimPannel.SetActive(true);
+        }
+    }
+    public void ConfrimName(int answer)
+    {
+        if (answer == 0)
+        {
+            confrimPannel.SetActive(false);
+        }
+        else
+        {
+            SaveManager.instance.currentSlot.playerStatusData.playerName = currentName;
+            SaveManager.instance.UpLoadPlayerDataInGameSlots();
+            SaveManager.instance.SavePlayerDataSets(SaveManager.instance.gameSlot);
+            cutSceneManager.GetComponent<CutSceneManager>();
+            AudioManager.instance.SetBgm("Home");
+            cutSceneManager.EndCutScene();
+        }
     }
 
 }

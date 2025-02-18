@@ -15,3 +15,4 @@ MonoBehaviour:
   cutScenePrefabs:
   - {fileID: 6622912605427302731, guid: a9cbd70b0c46ccb4a97d12128b20996c, type: 3}
   - {fileID: 6928501859058173951, guid: 90f924aad6cbe0343b4b8d090e939f5e, type: 3}
+  - {fileID: 5987741102780711295, guid: e72397840d3658f4ea976b3020ca7851, type: 3}

@@ -1,14 +1,12 @@
 using UnityEngine;
 
-public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
+public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
 {
-    public static HomeEvents instance;
     public CutSceneData cutScenes;
     public AudioClip[] audioClips;
     public int gameEventIndex;
     public int cutSceneIndex;
-    public bool isGameEvent;
-    public bool isCutScene;
+
     void Start()
     {
         if (MapManager.instance.mapData.CutSceneData.ContainsKey(MapManager.instance.mapCode))
@@ -59,6 +57,8 @@ public class HomeEvents : MonoBehaviour,IInGameEvent,ICutSceneEvent
                 break;
             case 2:
                 TriggerCutSceneEvent(2);
+                break;
+            case 4:
                 break;
 
         }

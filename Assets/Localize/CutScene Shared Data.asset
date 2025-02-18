@@ -51,6 +51,18 @@ MonoBehaviour:
     m_Key: no
     m_Metadata:
       m_Items: []
+  - m_Id: 1812567046275072
+    m_Key: SetCharacterName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1814461214932992
+    m_Key: NameConfrim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1857809535516672
+    m_Key: Confrim
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

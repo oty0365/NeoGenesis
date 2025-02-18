@@ -59,6 +59,19 @@ MonoBehaviour:
     m_Localized: no
     m_Metadata:
       m_Items: []
+  - m_Id: 1812567046275072
+    m_Localized: "\rI don't have a name, so every day\r\nI make my new name.\r\nWhat
+      will be my name?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1814461214932992
+    m_Localized: Are you sure you want to use this name?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1857809535516672
+    m_Localized: Submit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

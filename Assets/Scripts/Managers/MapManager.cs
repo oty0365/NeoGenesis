@@ -90,6 +90,7 @@ public class MapManager : MonoBehaviour,IUpLoader
     public MapSets mapSets;
     public Dictionary<string,MapInfo> mapDict = new Dictionary<string,MapInfo>();
     public MapInfo currentMap;
+    public GameObject mapObj;
     private void Awake()
     {
         instance = this;
@@ -112,7 +113,9 @@ public class MapManager : MonoBehaviour,IUpLoader
             mapCode = mapData.curMapCode;
         }
         currentMap = mapDict[mapCode];
-        Instantiate(currentMap.map);
+        SaveManager.instance.currentSlot.mapData.curLocation = mapDict[mapCode].mapName.GetLocalizedString();
+        UpLoadAndSaveData();
+        mapObj = Instantiate(currentMap.map);
 
     }
     public void UpLoadAndSaveData()
@@ -121,6 +124,7 @@ public class MapManager : MonoBehaviour,IUpLoader
         SaveManager.instance.gameSlot.slot[SaveManager.instance.currentIndex] = SaveManager.instance.currentSlot;
         SaveManager.instance.SavePlayerDataSets(SaveManager.instance.gameSlot);
     }
+    public void LoadMap()
 
     void Update()
     {

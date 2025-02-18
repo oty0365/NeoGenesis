@@ -22,11 +22,15 @@ public class AudioManager : MonoBehaviour
         currentBgmClip = bgmDict[code].bgm;
         
     }
+    public void SetOriginVolume()
+    {
+        bgmSource.volume = 1.0f * 0.01f * SettingsManager.instance.volume;
+    }
     public void PlayBgm(bool loop)
     {
         bgmSource.clip = currentBgmClip;
         bgmSource.loop = loop;
-        //bgmSource.volume = 1.0f*0.01f*SettingsManager.instance.volume;
+        bgmSource.volume = 1.0f*0.01f*SettingsManager.instance.volume;
         bgmSource.Play();
         
     }
@@ -41,12 +45,18 @@ public class AudioManager : MonoBehaviour
 
         while (elapsedTime < time)
         {
+            Debug.Log(bgmSource.volume);
             elapsedTime += Time.deltaTime; 
-            bgmSource.volume = Mathf.Lerp(startVolume, 0f, elapsedTime / time); 
+            bgmSource.volume = Mathf.Lerp(startVolume, 0f, elapsedTime / time);
+            if (bgmSource.volume <= 0.16f)
+            {
+                bgmSource.volume = 0f;
+                yield break;
+            }
             yield return null;
         }
+        bgmSource.volume = 0f;
 
-        bgmSource.volume = 0f; 
     }
 
 }
