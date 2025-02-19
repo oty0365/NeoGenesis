@@ -47,7 +47,7 @@ public class MonsterData
     public int originHp;
     public int originSpeed;
     public int originStamina;
-    public MonsterEffect effect;
+    public List<int> effects;
 }
 public class MonsterManager : MonoBehaviour 
 {

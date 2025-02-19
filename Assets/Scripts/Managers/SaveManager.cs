@@ -16,6 +16,7 @@ public class PlayerData
 }
 
 
+
 [System.Serializable]
 public class PlayerDataSets
 {
@@ -63,6 +64,8 @@ public class SaveManager : MonoBehaviour
             {
                 slot.characterInteractionData.serializedData = slot.characterInteractionData.ConvertToSerializableList(slot.characterInteractionData.InteractionData);
                 slot.mapData.serializedCutSceneData = slot.mapData.ConvertToSerializableList(slot.mapData.CutSceneData);
+                slot.playerStatusData.serializedItems = slot.playerStatusData.ConvertToSerializableItemList(slot.playerStatusData.Items);
+                slot.playerStatusData.serializedMonsterCardDictionary = slot.playerStatusData.ConvertToSerializableList(slot.playerStatusData.MonsterCardDictionary);
             }
         }
 
@@ -98,6 +101,8 @@ public class SaveManager : MonoBehaviour
                 currentSlot = dataSets.slot[index];
                 currentSlot.characterInteractionData.InteractionData = currentSlot.characterInteractionData.ConvertToDictionary();
                 currentSlot.mapData.CutSceneData = currentSlot.mapData.ConvertToDictionary(currentSlot.mapData.serializedCutSceneData);
+                currentSlot.playerStatusData.Items = currentSlot.playerStatusData.ConvertToItemDictionary(currentSlot.playerStatusData.serializedItems);
+                currentSlot.playerStatusData.MonsterCardDictionary = currentSlot.playerStatusData.ConvertToDictionary(currentSlot.playerStatusData.serializedMonsterCardDictionary);
                 return currentSlot;
             }
         }

@@ -34,6 +34,7 @@ public class CharacterSelection : MonoBehaviour
         {
             SaveManager.instance.currentSlot.playerStatusData.playerType = currentType;
             SaveManager.instance.UpLoadPlayerDataInGameSlots();
+            PlayerStatus.instance.UpdatePlayerCaracter(currentType);
             SaveManager.instance.SavePlayerDataSets(SaveManager.instance.gameSlot);
             cutSceneManager.GetComponent<CutSceneManager>();
             cutSceneManager.EndCutScene();

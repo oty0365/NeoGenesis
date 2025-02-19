@@ -73,6 +73,7 @@ public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
     public void TriggerCutSceneEvent(int index)
     {
         isCutScene = true;
+        PlayerController.instance.DemandMoves(3);
         Instantiate(cutScenes.cutScenePrefabs[index]);
         
     }

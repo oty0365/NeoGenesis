@@ -22,11 +22,18 @@ public class SerializableDictionaryEntry
 {
     public string key;
     public int value;
+    private string v;
 
     public SerializableDictionaryEntry(string key, int value)
     {
         this.key = key;
         this.value = value;
+    }
+
+    public SerializableDictionaryEntry(string key, string v)
+    {
+        this.key = key;
+        this.v = v;
     }
 }
 

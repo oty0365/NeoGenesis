@@ -265,8 +265,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c4e290ee9cc394f45a72b7b0f3fa0578, type: 3}
   gameEventIndex: 0
   cutSceneIndex: 0
-  isGameEvent: 0
-  isCutScene: 0
 --- !u!1 &1570527858459840835
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +279,7 @@ GameObject:
   - component: {fileID: 4809008848017815660}
   - component: {fileID: 5909515708864445751}
   - component: {fileID: 550500217950785800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30082,7 +30080,7 @@ GameObject:
   - component: {fileID: 8472199616361438833}
   - component: {fileID: 7110659845783560304}
   - component: {fileID: 6740134439799834201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30395,7 +30393,7 @@ GameObject:
   - component: {fileID: 1882927381708645213}
   - component: {fileID: 5785104396870085119}
   - component: {fileID: 5028710621298512133}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30613,7 +30611,7 @@ GameObject:
   - component: {fileID: 730794072601161698}
   - component: {fileID: 2730333390999248080}
   - component: {fileID: 8647884798594392314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30879,7 +30877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4686245539067540516}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33906,7 +33904,7 @@ GameObject:
   - component: {fileID: 9102289984652149827}
   - component: {fileID: 106351506894077670}
   - component: {fileID: 4412012637324639846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34040,7 +34038,7 @@ GameObject:
   - component: {fileID: 7089483454014107615}
   - component: {fileID: 7202879294165720720}
   - component: {fileID: 5578053196732828785}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39007,7 +39005,7 @@ GameObject:
   - component: {fileID: 5499596794996125274}
   - component: {fileID: 7091121848126039682}
   - component: {fileID: 9217909541040708218}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
