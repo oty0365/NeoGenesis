@@ -6,5 +6,5 @@ public class CharacterInfo : ScriptableObject
 {
     public LocalizedString characterName;
     public LocalizedString characterDescription;
-    public RuntimeAnimatorController aniController;
+    public Sprite characterSprite;
 }

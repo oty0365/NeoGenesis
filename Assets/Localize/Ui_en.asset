@@ -46,6 +46,10 @@ MonoBehaviour:
     m_Localized: SaveSettings
     m_Metadata:
       m_Items: []
+  - m_Id: 3933104803463168
+    m_Localized: Next
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

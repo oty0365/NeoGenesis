@@ -1,6 +1,12 @@
 using System.Collections.Generic;
+using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 
+
+public interface IInteractable
+{
+    void OnInteract();
+}
 [System.Serializable]
 public class SerializableNestedDictionaryEntry
 {
@@ -86,18 +92,34 @@ public class CharacterInteractionData
     }
 }
 
-public class InteractionManager : MonoBehaviour
+public class InteractionManager : MonoBehaviour,IUpLoader
 {
+    public static InteractionManager instance;
     public CharacterInteractionData interactionData;
     public string characterCode;
-    public CharacterSets characterSets;
+    public InteracterSets characterSets;
+    public Dictionary<string,CharacterInfo> characterDict= new Dictionary<string,CharacterInfo>();
+    private void Awake()
+    {
+        instance = this;
+        foreach(var i in characterSets.interacterSets)
+        {
+            characterDict.Add(i.characterCode, i.characterInfo);
+        }
+    }
     void Start()
     {
-        
+        interactionData = SaveManager.instance.currentSlot.characterInteractionData;
     }
 
     void Update()
     {
         
+    }
+    public void UpLoadAndSaveData()
+    {
+        SaveManager.instance.currentSlot.characterInteractionData = interactionData;
+        SaveManager.instance.gameSlot.slot[SaveManager.instance.currentIndex] = SaveManager.instance.currentSlot;
+        SaveManager.instance.SavePlayerDataSets(SaveManager.instance.gameSlot);
     }
 }

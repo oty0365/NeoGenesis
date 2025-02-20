@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: saveSettings
     m_Metadata:
       m_Items: []
+  - m_Id: 3933104803463168
+    m_Key: Next
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

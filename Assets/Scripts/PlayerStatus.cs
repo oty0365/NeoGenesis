@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 
 [System.Serializable]
@@ -109,7 +110,7 @@ public class PlayerStatusData
         return dict;
     }
 }
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : MonoBehaviour,IUpLoader
 {
     public static PlayerStatus instance;
     public Animator ani;
@@ -129,5 +130,11 @@ public class PlayerStatus : MonoBehaviour
     public void UpdatePlayerCaracter(int playerType)
     {
         ani.runtimeAnimatorController = playerAnimatorController[playerType];
+    }
+    public void UpLoadAndSaveData()
+    {
+        SaveManager.instance.currentSlot.playerStatusData = playerStatusData;
+        SaveManager.instance.gameSlot.slot[SaveManager.instance.currentIndex] = SaveManager.instance.currentSlot;
+        SaveManager.instance.SavePlayerDataSets(SaveManager.instance.gameSlot);
     }
 }
