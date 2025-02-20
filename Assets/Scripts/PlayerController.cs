@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public bool canInteract;
     public Animator ani;
     public SpriteRenderer sr;
-
+    private Vector2 _dir;
     private void Awake()
     {
         instance = this;
@@ -50,29 +50,31 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
         {
-            var dir = vecterValue.ReadValue<Vector2>();
-            if (vecterValue.started || vecterValue.performed)
-            {
-                dir = vecterValue.ReadValue<Vector2>();
-                Debug.Log(dir + rb2D.linearVelocity.ToString());
-            }
-            else if (vecterValue.canceled)
-            {
-                Debug.Log("canceled");
-            }
 
-            rb2D.linearVelocity = dir.normalized * PlayerStatus.instance.moveSpeed;
-            if (dir == Vector2.zero)
+            if (vecterValue.performed)
             {
-                ani.SetInteger("Behave", 0);
+                _dir = vecterValue.ReadValue<Vector2>();
+                ani.SetInteger("Behave", 1);
+                if (_dir.x > 0)
+                {
+                    sr.flipX = false;
+                }
+                else if(_dir.x<0)
+                {
+                    sr.flipX = true;
+                }
             }
             else
             {
-                ani.SetInteger("Behave", 1);
-                sr.flipX = dir.x < 0;
+                _dir = Vector2.zero;
+                ani.SetInteger("Behave", 0);
             }
 
         }
     }
-    
+    private void FixedUpdate()
+    {
+        rb2D.linearVelocity = _dir.normalized * PlayerStatus.instance.moveSpeed;
+    }
+
 }
