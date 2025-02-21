@@ -23,6 +23,38 @@ MonoBehaviour:
     m_Key: NemudonDoll-2
     m_Metadata:
       m_Items: []
+  - m_Id: 85157305171968
+    m_Key: BadPaper-1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87381762686976
+    m_Key: BadPaper-2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92514802253824
+    m_Key: BadPaper-3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94257787224064
+    m_Key: BadPaper2-1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96335188246528
+    m_Key: BadPaper2-2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99906688434176
+    m_Key: ChampionPoster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100604217966592
+    m_Key: EmptyBox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100908577636352
+    m_Key: OldTelevision
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

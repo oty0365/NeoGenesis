@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 1206885915286360269}
   - component: {fileID: 5707697880361352685}
   - component: {fileID: 2963421657085582106}
+  - component: {fileID: 8454936459322423115}
   m_Layer: 7
   m_Name: Paper2
   m_TagString: Untagged
@@ -180,6 +181,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.73, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &8454936459322423115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610198752729901706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade294a123455cf41a4d89b5edd214a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouges: {fileID: 11400000, guid: 08f46ad83fc86324b9286c3dd93a84cd, type: 2}
+  objectName: badpaper2
 --- !u!1 &1077425653057092496
 GameObject:
   m_ObjectHideFlags: 0
@@ -30080,6 +30095,7 @@ GameObject:
   - component: {fileID: 8472199616361438833}
   - component: {fileID: 7110659845783560304}
   - component: {fileID: 6740134439799834201}
+  - component: {fileID: 8726374005856824569}
   m_Layer: 7
   m_Name: Box
   m_TagString: Untagged
@@ -30203,6 +30219,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.77, y: 0.58}
   m_EdgeRadius: 0
+--- !u!114 &8726374005856824569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2410147872355348768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade294a123455cf41a4d89b5edd214a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouges: {fileID: 11400000, guid: a3f017962d36e3f45b8cb197f524bbf9, type: 2}
+  objectName: emptybox
 --- !u!1 &2480129823362877260
 GameObject:
   m_ObjectHideFlags: 0
@@ -30929,6 +30959,7 @@ GameObject:
   - component: {fileID: 6488247908688048776}
   - component: {fileID: 2748412467505562179}
   - component: {fileID: 6409653359083245985}
+  - component: {fileID: 5335043934032880794}
   m_Layer: 7
   m_Name: Paper1
   m_TagString: Untagged
@@ -31052,6 +31083,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.73, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &5335043934032880794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006720566533826411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade294a123455cf41a4d89b5edd214a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouges: {fileID: 11400000, guid: 84a0bf94f953ea341882557d5b4b5fea, type: 2}
+  objectName: badpaper
 --- !u!1 &4091561457960473012
 GameObject:
   m_ObjectHideFlags: 0
@@ -31148,7 +31193,8 @@ GameObject:
   - component: {fileID: 6464918219020771667}
   - component: {fileID: 6663434387263345790}
   - component: {fileID: 5607844440876324254}
-  m_Layer: 0
+  - component: {fileID: 1959981417691317864}
+  m_Layer: 7
   m_Name: OldTelevision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31285,6 +31331,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7, y: 0.18773192}
   m_EdgeRadius: 0
+--- !u!114 &1959981417691317864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4483670190212669124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade294a123455cf41a4d89b5edd214a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouges: {fileID: 11400000, guid: 8ee0f97d446cc4441826659ce38fac08, type: 2}
+  objectName: oldtelevision
 --- !u!1 &5039546043312389428
 GameObject:
   m_ObjectHideFlags: 0
@@ -39479,6 +39539,7 @@ GameObject:
   - component: {fileID: 6745629101707385737}
   - component: {fileID: 9169361241146075140}
   - component: {fileID: 2079201501865299134}
+  - component: {fileID: 4079140624926858758}
   m_Layer: 7
   m_Name: Poster
   m_TagString: Untagged
@@ -39602,3 +39663,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.81, y: 0.87}
   m_EdgeRadius: 0
+--- !u!114 &4079140624926858758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9044192848754463002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade294a123455cf41a4d89b5edd214a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouges: {fileID: 11400000, guid: 9c082ba1ad767df428ebdeb0c8ded037, type: 2}
+  objectName: championsposter

@@ -26,6 +26,48 @@ MonoBehaviour:
     m_Localized: There is always a feeling of warmth
     m_Metadata:
       m_Items: []
+  - m_Id: 85157305171968
+    m_Localized: A dunning message on February 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87381762686976
+    m_Localized: '"It''s a collection as of today, so hurry up and pay it.
+
+      Don''t
+      you have to pay for your debt?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92514802253824
+    m_Localized: Blackjack's executive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94257787224064
+    m_Localized: A reminder on January 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96335188246528
+    m_Localized: '"Hurry up and give me the money today"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99906688434176
+    m_Localized: 'It''s a poster of a champion.
+
+      I want to be... someday..'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100604217966592
+    m_Localized: 'It''s an empty delivery box..
+
+      It''s wet and there''s nothing.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100908577636352
+    m_Localized: 'The old television that''s been around since I came here..
+
+      I
+      always watched the Champions League with this'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
