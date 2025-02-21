@@ -2159,6 +2159,106 @@ MonoBehaviour:
     - playerStatusData:
         playerName: 
         playerType: 0
+        entry:
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        monsters: []
+        serializedItems: []
+        serializedMonsterCardDictionary: []
       characterInteractionData:
         serializedData: []
       mapData:
@@ -2170,6 +2270,106 @@ MonoBehaviour:
     - playerStatusData:
         playerName: 
         playerType: 0
+        entry:
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        monsters: []
+        serializedItems: []
+        serializedMonsterCardDictionary: []
       characterInteractionData:
         serializedData: []
       mapData:
@@ -2181,6 +2381,106 @@ MonoBehaviour:
     - playerStatusData:
         playerName: 
         playerType: 0
+        entry:
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        - monsterCode: 
+          nickName: 
+          attackPlus: 0
+          hpPlus: 0
+          speedPlus: 0
+          stamina: 0
+          level: 0
+          curExp: 0
+          maxExp: 0
+          maxHp: 0
+          curHp: 0
+          originAttack: 0
+          originHp: 0
+          originSpeed: 0
+          originStamina: 0
+          effects: 
+        monsters: []
+        serializedItems: []
+        serializedMonsterCardDictionary: []
       characterInteractionData:
         serializedData: []
       mapData:
@@ -2193,6 +2493,106 @@ MonoBehaviour:
     playerStatusData:
       playerName: 
       playerType: 0
+      entry:
+      - monsterCode: 
+        nickName: 
+        attackPlus: 0
+        hpPlus: 0
+        speedPlus: 0
+        stamina: 0
+        level: 0
+        curExp: 0
+        maxExp: 0
+        maxHp: 0
+        curHp: 0
+        originAttack: 0
+        originHp: 0
+        originSpeed: 0
+        originStamina: 0
+        effects: 
+      - monsterCode: 
+        nickName: 
+        attackPlus: 0
+        hpPlus: 0
+        speedPlus: 0
+        stamina: 0
+        level: 0
+        curExp: 0
+        maxExp: 0
+        maxHp: 0
+        curHp: 0
+        originAttack: 0
+        originHp: 0
+        originSpeed: 0
+        originStamina: 0
+        effects: 
+      - monsterCode: 
+        nickName: 
+        attackPlus: 0
+        hpPlus: 0
+        speedPlus: 0
+        stamina: 0
+        level: 0
+        curExp: 0
+        maxExp: 0
+        maxHp: 0
+        curHp: 0
+        originAttack: 0
+        originHp: 0
+        originSpeed: 0
+        originStamina: 0
+        effects: 
+      - monsterCode: 
+        nickName: 
+        attackPlus: 0
+        hpPlus: 0
+        speedPlus: 0
+        stamina: 0
+        level: 0
+        curExp: 0
+        maxExp: 0
+        maxHp: 0
+        curHp: 0
+        originAttack: 0
+        originHp: 0
+        originSpeed: 0
+        originStamina: 0
+        effects: 
+      - monsterCode: 
+        nickName: 
+        attackPlus: 0
+        hpPlus: 0
+        speedPlus: 0
+        stamina: 0
+        level: 0
+        curExp: 0
+        maxExp: 0
+        maxHp: 0
+        curHp: 0
+        originAttack: 0
+        originHp: 0
+        originSpeed: 0
+        originStamina: 0
+        effects: 
+      - monsterCode: 
+        nickName: 
+        attackPlus: 0
+        hpPlus: 0
+        speedPlus: 0
+        stamina: 0
+        level: 0
+        curExp: 0
+        maxExp: 0
+        maxHp: 0
+        curHp: 0
+        originAttack: 0
+        originHp: 0
+        originSpeed: 0
+        originStamina: 0
+        effects: 
+      monsters: []
+      serializedItems: []
+      serializedMonsterCardDictionary: []
     characterInteractionData:
       serializedData: []
     mapData:

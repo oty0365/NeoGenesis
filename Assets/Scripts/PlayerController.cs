@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
                 canInteract = true;
                 break;
             case 1:
+                _dir = Vector2.zero;
                 canMove = false;
                 canInteract = true;
                 break;
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
                 canMove = true;
                 break;
             case 3:
+                _dir = Vector2.zero;
                 canMove = false;
                 canInteract = false;
                 break;

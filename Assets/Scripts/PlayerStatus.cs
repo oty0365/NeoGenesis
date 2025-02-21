@@ -127,6 +127,10 @@ public class PlayerStatus : MonoBehaviour,IUpLoader
         playerStatusData = SaveManager.instance.currentSlot.playerStatusData;
         ani.runtimeAnimatorController = playerAnimatorController[playerStatusData.playerType];
     }
+    void Update()
+    {
+        MapManager.instance.mapData.curPosition = gameObject.transform.position;
+    }
     public void UpdatePlayerCaracter(int playerType)
     {
         ani.runtimeAnimatorController = playerAnimatorController[playerType];

@@ -135,8 +135,4 @@ public class MapManager : MonoBehaviour,IUpLoader
         HeadCameraManager.instance.ChangeLens(currentMap.camSize);
         mapObj = Instantiate(currentMap.map);
     }
-
-    void Update()
-    {
-    }
 }
