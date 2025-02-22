@@ -50,6 +50,26 @@ MonoBehaviour:
     m_Localized: Next
     m_Metadata:
       m_Items: []
+  - m_Id: 4545818030555136
+    m_Localized: To Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4546421985165312
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4547025906221056
+    m_Localized: Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4547289107185664
+    m_Localized: Status
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4548291055108096
+    m_Localized: To game
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

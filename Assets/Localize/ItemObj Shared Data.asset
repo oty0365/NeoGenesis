@@ -55,6 +55,10 @@ MonoBehaviour:
     m_Key: OldTelevision
     m_Metadata:
       m_Items: []
+  - m_Id: 348908747014144
+    m_Key: New Entry
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

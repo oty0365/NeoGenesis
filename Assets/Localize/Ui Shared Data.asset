@@ -47,6 +47,26 @@ MonoBehaviour:
     m_Key: Next
     m_Metadata:
       m_Items: []
+  - m_Id: 4545818030555136
+    m_Key: ToMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4546421985165312
+    m_Key: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4547025906221056
+    m_Key: Items
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4547289107185664
+    m_Key: PlayerStatus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4548291055108096
+    m_Key: PannelQuit
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
