@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ja-JP
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 319d51fb9dcc67a4fa07ec31cdaae52b
+    m_Address: CharacterDialog_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 61523e6f510887c49b103713dbabbefe
     m_Address: CutScene_ja-JP
     m_ReadOnly: 1

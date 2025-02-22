@@ -13,6 +13,10 @@ public interface ICutSceneEvent
     public void CheckCutSceneEvent();
     public void TriggerCutSceneEvent(int index);
 }
+public interface EventObjects
+{
+    public void TriggerEventObjects();
+}
 [System.Serializable]
 public class MapData
 {
