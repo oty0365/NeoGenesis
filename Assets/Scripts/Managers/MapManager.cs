@@ -13,7 +13,7 @@ public interface ICutSceneEvent
     public void CheckCutSceneEvent();
     public void TriggerCutSceneEvent(int index);
 }
-public interface EventObjects
+public interface IEventObjects
 {
     public void TriggerEventObjects();
 }

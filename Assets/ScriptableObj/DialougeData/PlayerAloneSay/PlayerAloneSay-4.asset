@@ -35,6 +35,9 @@ MonoBehaviour:
   leftCharacter: {fileID: 0}
   hasOptions: 0
   dialouges: {fileID: 0}
+  talkEvent:
+    m_PersistentCalls:
+      m_Calls: []
   references:
     version: 2
     RefIds: []

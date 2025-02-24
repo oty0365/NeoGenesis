@@ -39383,6 +39383,7 @@ GameObject:
   - component: {fileID: 8185065377781987995}
   - component: {fileID: 5124907600875651579}
   - component: {fileID: 2897898747838287857}
+  - component: {fileID: 4655248960951621425}
   m_Layer: 7
   m_Name: WetCard
   m_TagString: Untagged
@@ -39528,6 +39529,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.56, y: 0.68}
   m_EdgeRadius: 0
+--- !u!114 &4655248960951621425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908982307289526939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df6d0272935c064fb41f8aba8ed937d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: TrashCard
+  dialouges: {fileID: 11400000, guid: 731a1bda43808474eb938cdc85b3e6de, type: 2}
 --- !u!1 &9044192848754463002
 GameObject:
   m_ObjectHideFlags: 0

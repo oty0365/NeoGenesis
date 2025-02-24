@@ -46,17 +46,13 @@ public class DialogManager : MonoBehaviour
     }
     public void PutText(int index)
     {
-
-        if(!currentDia.dialougeTexts[index].talkerName.IsEmpty)
+        if (currentDia.dialougeTexts[index].isMainCharacter)
         {
-            if (currentDia.dialougeTexts[index].isMainCharacter)
-            {
-                characterName.text = PlayerStatus.instance.playerStatusData.playerName;
-            }
-            else
-            {
+            characterName.text = PlayerStatus.instance.playerStatusData.playerName;
+        }
+        if (!currentDia.dialougeTexts[index].talkerName.IsEmpty)
+        {
                 characterName.text = currentDia.dialougeTexts[index].talkerName.GetLocalizedString();
-            }
         }
         diaText.text = currentDia.dialougeTexts[index].text.GetLocalizedString();
         if (currentDia.dialougeTexts[index].rightCharacter != null)

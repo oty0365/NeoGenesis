@@ -13,5 +13,5 @@ public class DialougeText : ScriptableObject
     public Sprite leftCharacter;
     public bool hasOptions;
     public Dialouges dialouges;
-    public UnityAction talkEvent;
+    public Action talkEvent;
 }
