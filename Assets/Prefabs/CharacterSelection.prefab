@@ -146,8 +146,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
-  m_sharedMaterial: {fileID: -3272610037520353451, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -841,8 +841,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
-  m_sharedMaterial: {fileID: -3272610037520353451, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e3085f43a25a414ab3c0ad2b84145e6, type: 2}
+  m_sharedMaterial: {fileID: 2302280999545137570, guid: 2e3085f43a25a414ab3c0ad2b84145e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1018,8 +1018,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
-  m_sharedMaterial: {fileID: -3272610037520353451, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e3085f43a25a414ab3c0ad2b84145e6, type: 2}
+  m_sharedMaterial: {fileID: 2302280999545137570, guid: 2e3085f43a25a414ab3c0ad2b84145e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1327,8 +1327,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
-  m_sharedMaterial: {fileID: -3272610037520353451, guid: 15937683e1316b943b1a52b0e6924ed9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e3085f43a25a414ab3c0ad2b84145e6, type: 2}
+  m_sharedMaterial: {fileID: 2302280999545137570, guid: 2e3085f43a25a414ab3c0ad2b84145e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1737,6 +1737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentType: 0
+  currentName: 
+  inputField: {fileID: 0}
   confrimPannel: {fileID: 721562547112262416}
   cutSceneManager: {fileID: 8220650409973007597}
   bgm: {fileID: 8300000, guid: 09584f9f6560f7b4c8dd255486bde1d1, type: 3}
