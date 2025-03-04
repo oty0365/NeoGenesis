@@ -70,6 +70,7 @@ public class DialogManager : MonoBehaviour
         {
             selectionPannel.SetActive(true);
         }
+        currentDia.dialougeTexts[index].ExcuteActions();
     }
 
     public void GotoNext()

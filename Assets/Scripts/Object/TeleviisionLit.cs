@@ -12,9 +12,11 @@ public class TeleviisionLit : MonoBehaviour
     }
     private IEnumerator TelevisionBlink()
     {
-        yield return new WaitForSeconds(Random.Range(0.1f, 2.6f));
-        teleLight.falloffIntensity = Random.Range(0.5f, 0.62f);
-        StartCoroutine(TelevisionBlink());
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(0.1f, 2.6f));
+            teleLight.falloffIntensity = Random.Range(0.5f, 0.62f);
+        }
     }
 
 }

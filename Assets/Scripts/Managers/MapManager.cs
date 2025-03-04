@@ -2,12 +2,12 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
 
-public interface IInGameEvent
+/*public interface IInGameEvent
 {
     
     public void CheckGameEvent();
     public void TriggerGameEvent(int index);
-}
+}*/
 public interface ICutSceneEvent
 {
     public void CheckCutSceneEvent();
@@ -92,6 +92,7 @@ public class MapManager : MonoBehaviour,IUpLoader
     public string mapName;
     public MapData mapData;
     public MapSets mapSets;
+    public GameObject eventFlow;
     public Dictionary<string,MapInfo> mapDict = new Dictionary<string,MapInfo>();
     public MapInfo currentMap;
     public GameObject mapObj;
@@ -134,9 +135,14 @@ public class MapManager : MonoBehaviour,IUpLoader
     {
         mapData = SaveManager.instance.currentSlot.mapData;
         currentMap = mapDict[mapCode];
+        eventFlow=GameObject.FindAnyObjectByType<InGameEvents>().gameObject;
         SaveManager.instance.currentSlot.mapData.curLocation = mapDict[mapCode].mapName.GetLocalizedString();
         UpLoadAndSaveData();
         HeadCameraManager.instance.ChangeLens(currentMap.camSize);
         mapObj = Instantiate(currentMap.map);
+    }
+    public void StartEventCutscene()
+    {
+        eventFlow.GetComponent<InGameEvents>().IncreaseIndex();
     }
 }

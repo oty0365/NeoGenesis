@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
+public class HomeEvents : InGameEvents,ICutSceneEvent
 {
     public CutSceneData cutScenes;
     public AudioClip[] audioClips;
-    public int gameEventIndex;
     public int cutSceneIndex;
 
     void Start()
@@ -39,19 +38,12 @@ public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
     void Update()
     {
         cutSceneIndex = MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode];
-        if (!isGameEvent)
-        {
-            CheckGameEvent();
-        }
         if (!isCutScene)
         {
             CheckCutSceneEvent();
         }
     }
-    public void CheckGameEvent()
-    {
 
-    }
     public void CheckCutSceneEvent()
     {
         switch (cutSceneIndex)
@@ -66,6 +58,11 @@ public class HomeEvents : InGameEvents,IInGameEvent,ICutSceneEvent
                 TriggerCutSceneEvent(2);
                 break;
             case 3:
+                break;
+            case 4:
+                TriggerCutSceneEvent(3);
+                break;
+            case 5:
                 break;
 
         }
