@@ -4,8 +4,6 @@ public class HomeEvents : InGameEvents,ICutSceneEvent
 {
     public CutSceneData cutScenes;
     public AudioClip[] audioClips;
-    public int cutSceneIndex;
-
     void Start()
     {
         if (MapManager.instance.mapData.CutSceneData.ContainsKey(MapManager.instance.mapCode))
@@ -26,25 +24,12 @@ public class HomeEvents : InGameEvents,ICutSceneEvent
             gameEventIndex = 0;
             MapManager.instance.mapData.MapEventData[MapManager.instance.mapCode] = gameEventIndex;
         }
-        switch (cutSceneIndex)
-        {
-            case 3:
-                AudioManager.instance.SetBgm("Home");
-                AudioManager.instance.PlayBgm(true);
-                break;
-        }
+        InitCutSceneEvent();
+        StartCutSceneEvent();
     }
 
-    void Update()
-    {
-        cutSceneIndex = MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode];
-        if (!isCutScene)
-        {
-            CheckCutSceneEvent();
-        }
-    }
 
-    public void CheckCutSceneEvent()
+    public override void CheckCutSceneEvent()
     {
         switch (cutSceneIndex)
         {
@@ -67,15 +52,21 @@ public class HomeEvents : InGameEvents,ICutSceneEvent
 
         }
     }
+    public override void InitCutSceneEvent()
+    {
+        switch (cutSceneIndex)
+        {
+            case 3:
+                AudioManager.instance.SetBgm("Home");
+                AudioManager.instance.PlayBgm(true);
+                break;
+        }
+    }
     public void TriggerCutSceneEvent(int index)
     {
         isCutScene = true;
         PlayerController.instance.DemandMoves(3);
         Instantiate(cutScenes.cutScenePrefabs[index]);
         
-    }
-    public void TriggerGameEvent(int index)
-    {
-        isGameEvent = true;
     }
 }
