@@ -43,6 +43,7 @@ public class CutSceneManager : MonoBehaviour
         MapManager.instance.mapData.CutSceneData[MapManager.instance.mapCode] = cutSceneLevel;
         MapManager.instance.UpLoadAndSaveData();
         InGameEvents.isCutScene = false;
+        InGameEvents.StartCut
         PlayerController.instance.DemandMoves(0);
         StartCoroutine(EndCutSceneFlow());
         
